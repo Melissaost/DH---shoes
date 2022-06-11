@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.cabecalho{
+    width: 100%;
+    height: 12vh;
+    box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .itens ul{
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+    font-family: 'Ropa Sans', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    color: #777777;
+    list-style: none;
+    padding-right: 30px;
+    padding-left: 0px;
+}
+
+.banner{
+    background-image: url(img/banner.png);
+    width: 100%;
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo p{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans' ;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.conteudo .conteudoFotos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    margin-top: 30px;
+}
+
+
+.conteudo .conteudoFotos .foto1{
+    width: 30%;
+    height: 60%;
+}
+
+.conteudo .conteudoFotos .foto2{
+    width: 50%;
+    height: 70%;
+}
+
+.promocoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background-color: #C2185B;
+    margin-top: 50px;
+    margin-left: -20px;
+}
+
+.off{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 44px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.sapato{
+    width: 250px;
+    height: 400px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    overflow: hidden; /* Faz o div não aumentar a altura por causa da imagem */
+}
+
+/* essa parte de baixo faz a imagem respeitar o tamanho da div */
+.cardPalmilha img{
+    height: 100%;
+    width: 100%;
+}
+.sapato .descricao{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px 10px 0px 10px;
+}
+
+.sapato .preco{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0px 10px 0px;
+}
+
+.cardPalmilha{
+    width: 50%;
+    height: 100%;
+}
+
+.cardPalmilha .desc{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-size: 39px;
+    line-height: 53px;
+    padding-bottom: 10px;
+}
+
+.detalhes{
+    width: 50%;
+    height: 12vh;
+    background: #C2185B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 53px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.segundasFotos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    overflow: hidden; 
+}
+.segundasFotos .fotoSapato2{
+    width: 40%;
+}
+
+.rodape{
+    width: 100vw;
+    height: 30vh;
+    background: #C2185B;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 20px 0px 20px ;
+}
+
+.LogoRP{
+    width: 50vw;
+
+}
+
+.LogoRP .descRP{
+    width: 40vw;
+    margin-top: -25px;
+}
+
+.categorias{
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+}
+
+.rodape h3{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.rodape p{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 25px;
+}
+
+
+@media (max-width: 1400px){
+    .menu .itens ul{
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 15px;
+    }
+    
+    .banner{
+        height: 18vh;
+        width: 100vw;
+    }
+
+    .conteudo p{
+        font-size: 30px;
+    }
+
+    .sapato{
+       width: 180px;
+       height: 300px;
+       margin-bottom: 10px;
+   }
+
+   .sapato img {
+        width: 100%;
+        height: 80%; 
+    }
+
+
+    .sapato .descricao{
+        font-size: 15px;
+    }
+
+    .sapato .preco{
+        font-size: 14px;
+    }
+    
+    .cardPalmilha{
+        height: 100%;
+    }
+    .cardPalmilha .fotoSapato{
+        width: 100%;
+        height: 75%;
+    }
+
+    .cardPalmilha .desc{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .detalhes{
+        height: 10%;
+        font-size: 12px;
+    }
+
+    .segundasFotos{
+        height: 50%;
+    }
+
+    
+    .rodape h3{
+        font-size: 12px;
+    }
+    .categorias{
+        width: 109%;
+    }
+
+    .LogoRP{
+        width: 100%;
+    }
+
+    .imgRP{
+        width: 150px;
+    }
+    
+    .rodape p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
+
+@media (max-width: 760px){
+    .menu .itens ul{
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 15px;
+    }
+    
+    .banner{
+        width: 100vw;
+    }
+
+    .conteudo p{
+        font-size: 30px;
+    }
+
+    .sapato{
+       width: 150px;
+       height: 280px;
+       margin-bottom: 10px;
+   }
+
+   .sapato img {
+        width: 100%;
+        height: 80%; 
+    }
+
+
+    .sapato .descricao{
+        font-size: 15px;
+    }
+
+    .sapato .preco{
+        font-size: 14px;
+    }
+    
+    .cardPalmilha{
+        height: 100%;
+    }
+    .cardPalmilha .fotoSapato{
+        width: 100%;
+        height: 75%;
+    }
+
+    .cardPalmilha .desc{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .detalhes{
+        height: 10%;
+        font-size: 12px;
+    }
+
+    .segundasFotos{
+        height: 50%;
+    }
+    
+    .rodape h3{
+        font-size: 12px;
+    }
+    .categorias{
+        width: 109%;
+    }
+
+    .LogoRP{
+        width: 100%;
+    }
+
+    .imgRP{
+        width: 150px;
+    }
+    
+    .rodape p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+}
